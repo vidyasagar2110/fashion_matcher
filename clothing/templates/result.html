@@ -1,0 +1,14 @@
+<!-- clothing/templates/result.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matching Result</title>
+</head>
+<body>
+    <h1>Matching Result</h1>
+    <p>Here is the result of your clothing match:</p>
+    <img src="{{ result_image_path }}" alt="Matching Result">
+    <br>
+    <a href="{% url 'match_clothing' %}">Try Again</a>
+</body>
+</html>

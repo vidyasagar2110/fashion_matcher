@@ -1,0 +1,15 @@
+<!-- clothing/templates/match_clothing.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Match Clothing</title>
+</head>
+<body>
+    <h1>Enter Clothing URLs</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Match Clothes</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fashion Matcher</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        {% load static %}
+        <img src="{% static 'logo.png' %}" alt="Fashion Matcher Logo" />
+        <h1>Fashion Matcher</h1>
+        <p>Welcome to Fashion Matcher</p>
+    </header>
+    <main>
+        <a href="{% url 'male_clothing' %}">
+            <button>Male</button>
+        </a>
+        <a href="{% url 'female_clothing' %}">
+            <button>Female</button>
+        </a>
+    </main>
+</body>
+</html>
